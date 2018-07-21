@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <title>Fomo3D收益计算器</title>
+</head>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<body>
+<div class="container">
+    <h3>
+        <center>Fomo3D收益计算器</center>
+    </h3>
+    <form>
+        <div class="form-group">
+        <label for="inputAddress">钱包地址</label>
+        <input type="text" class="form-control" id="inputAddress" aria-describedby="addressHelp" placeholder="Enter your ETH Address ">
+        </div>
+        <div id="addressFeedback" class="text-danger"></div>
+
+        <button type="button" class="btn btn-success btn-lg btn-block" id="trackButton">重新计算</button>
+    </form>
+    <br>
+    <br>
+    <div class="panel panel-primary">
+
+        <div class="panel-heading">结果</div>
+        <div class="panel-body">
+            <p class="text-center text-success">当前Key价格：<label id="currP">0</label> ETH</p>
+
+            <hr>
+
+            <p class="text-center text-success">您投资的ETH数量：<label id="ethpec">0</label> ETH</p>
+            <p class="text-center text-success">您持有的KEY数量：<label id="keypec">0</label> KEY</p>
+            <p class="text-center text-success">全网持有的KEY数量：<label id="tkeypec">0</label> KEY</p>
+            <p class="text-center text-success">您已获得的ETH数量：<label id="cethpec">0</label> ETH</p>
+
+            <hr>
+
+            <p class="text-center text-success">预计回本的KEY总量数字：<label id="end"></label> KEY</p>
+            <p class="text-center text-success">还需要由韭菜购买KEY的数量：<label id="lend"></label> KEY</p>
+            <p class="text-center text-success">还需要割的韭菜数量：<label id="tlend"></label> ETH</p>
+            <p class="text-center text-success">到目前为止已割韭菜：<label id="btlend"></label> ETH</p>
+            <hr>
+
+            <br>
+            <p class="text-center text-danger">
+                <label style="font-size: medium"><a href="https://www.bihu.com/article/966554" target="_blank">♠️ Fomo3D 麦子钱包教程</a></label>
+            </p><br>
+
+            <p class="text-center text-danger">
+                <label style="font-size: medium"><a href="https://www.bihu.com/article/966576" target="_blank">♥️ P3D 麦子钱包教程</a></label>
+            </p><br><br>
+            <p class="text-center text-danger">
+                <label style="font-size: medium">📣 玩3D，用麦子！！</label>
+            </p>
+
+            <p class="text-center text-danger">
+                <a href="http://mathwallet.org" target="_blank">🔗 下载麦子钱包</a>
+                <!-- <label style="font-size: medium">下载麦子钱包</label><br> -->
+                <!-- <img src="http://www.medishares.org/images/download/wallet_cn.png" class="img-rounded" style="width:200px"> -->
+            </p>
+        </div>
+    </div>
+</div>
+<script src='web3.min.js'></script>
+<script src='bignumber.min.js'></script>
+<script src='crypto-js.js'></script>
+<script src='main.js'></script>
+</body>
+</html>
