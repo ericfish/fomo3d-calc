@@ -112,7 +112,7 @@
           break;
         }
     }
-    console.log(a);
+    // console.log(a);
 
     j=a+tkeypec-tkeypec
 
