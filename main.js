@@ -100,10 +100,12 @@
 
 		    $('#keypec').html(Number(web3.fromWei(result[2].toNumber())).toFixed(2)); // 有多少key
 
+        var cashoutETH = document.getElementById('cashoutETH').value;
 		    let winnings = result[3];
 		    let exitScam = result[4];
 		    let badAdv = result[5];
-		    let totalDivs = Number(web3.fromWei(Number(exitScam)+Number(badAdv)+Number(winnings))).toFixed(6);
+		    var totalDivs = Number(web3.fromWei(Number(exitScam)+Number(badAdv)+Number(winnings)) ) + Number(cashoutETH);
+        totalDivs = Number(totalDivs).toFixed(6);
 
 		    $('#cethpec').html(totalDivs); // 目前ETH
 
@@ -125,13 +127,6 @@
     var keypec = parseFloat(document.getElementById('keypec').innerHTML);
     var tkeypec = parseFloat(document.getElementById('tkeypec').innerHTML);
     var i,a,t,j,b;
-
-
-            console.log(ethpec);
-            console.log(cethpec);
-            console.log(keypec);
-            console.log(tkeypec);
-
 
     for(a=0,i=ethpec-cethpec,t=tkeypec;i>0;t++){
         a++;
