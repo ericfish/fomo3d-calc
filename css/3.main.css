@@ -1,0 +1,52 @@
+form,h2{
+    margin:0 auto;
+    text-align:center;
+}
+
+img.logo{
+	width: 20%;
+	max-width: 150px;
+}
+
+#chart_div, #chart_snake{
+	min-height: 500px;
+	max-width:95rem;
+	margin: auto;
+}
+
+#btReinvest{
+	display: none;
+}
+#btWithdraw{
+	display: none;
+}
+#trackButton{
+	display: none;
+}
+
+.priceUp{
+	color: #44be24;
+}
+
+.priceDown{
+	color: #ff6939;
+}
+
+@media (max-width: 488px) {
+	#bt8{
+		margin-top: 1em;
+	    margin-bottom: 1em
+	}
+	
+}
+@media (max-width: 431px) {
+	#bt7{
+		margin-top: 1em;
+	    margin-bottom: 1em
+	}
+	#bt8{
+		margin-top: 1em;
+	    margin-bottom: 1em
+	}
+	
+}
