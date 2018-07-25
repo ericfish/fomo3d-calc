@@ -1,0 +1,99 @@
+<html>
+  <body>
+    <h2>Web3 API version</h2>
+    <p id="p1"></p>
+    <h2>My Account</h2>
+    <p id="account"></p>
+    <script>
+
+    /**
+    * @dev Multiplies two numbers, throws on overflow.
+    */
+    function mul( a,  b)
+    {
+        if (a == 0) {
+            return 0;
+        }
+        c = a * b;
+        // require(c / a == b, "SafeMath mul failed");
+        return c;
+    }
+
+    /**
+    * @dev Subtracts two numbers, throws on overflow (i.e. if subtrahend is greater than minuend).
+    */
+    function sub( a,  b)
+    {
+        // require(b <= a, "SafeMath sub failed");
+        return a - b;
+    }
+
+    /**
+    * @dev Adds two numbers, throws on overflow.
+    */
+    function add( a,  b)
+    {
+        c = a + b;
+        // require(c >= a, "SafeMath add failed");
+        return c;
+    }
+
+    /**
+     * @dev gives square root of given x.
+     */
+    function sqrt( x)
+    {
+         z = ((add(x,1)) / 2);
+        y = x;
+        while (z < y)
+        {
+            y = z;
+            z = ((add((x / z),z)) / 2);
+        }
+    }
+
+    /**
+     * @dev gives square. multiplies x by x
+     */
+    function sq( x)
+    {
+        return (mul(x,x));
+    }
+
+    /**
+     * @dev x to the power of y
+     */
+    function pwr( x,  y)
+    {
+        if (x==0)
+            return (0);
+        else if (y==0)
+            return (1);
+        else
+        {
+             z = x;
+            for ( i=1; i < y; i++)
+                z = mul(z,x);
+            return (z);
+        }
+    }
+
+      // var ckey11 = 10000;
+
+      // var ckey21 = 34465604.59;
+
+      // var price1 = ((78125000)*(sq(ckey11))+(((149999843750000)*(ckey11*1000000000000000000)) / (2))) / (sq(1000000000000000000));
+
+      // console.log(price1);
+
+      // var price2 = ((78125000)*(sq(ckey21))+(((149999843750000)*(ckey21*1000000000000000000)) / (2))) / (sq(1000000000000000000));
+
+      // console.log(price2);
+
+      var _eth = 10000;
+      var keynum1 = (( sqrt( ((((_eth)*(1000000000000000000))*(312500000000000000000000000))+(5624988281256103515625000000000000000000000000000000000000000000)) ))-(74999921875000000000000000000000)) / (156250000);
+      console.log(keynum1);
+
+    </script>
+  </body>
+</html>
